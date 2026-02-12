@@ -505,6 +505,7 @@
             text-decoration: underline;
         }
 
+        /* АДАПТАЦИЯ ПОД МОБИЛЬНЫЕ УСТРОЙСТВА */
         @media (max-width: 900px) {
             .monsters-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -549,8 +550,68 @@
             .castle-images-grid {
                 grid-template-columns: 1fr;
             }
-            .welcome h1 { font-size: 32px; }
-            .section-icon { width: 100px; height: 100px; font-size: 52px; }
+            
+            /* ✅ КАРТИНКИ НА ВЕСЬ ЭКРАН */
+            .monster-image {
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+            }
+            
+            .monster-image-container {
+                padding: 15px;
+            }
+            
+            .monster-image-container h2 {
+                font-size: 26px;
+                margin-bottom: 15px;
+            }
+            
+            /* ✅ КРУПНЫЕ КНОПКИ ДЛЯ ПАЛЬЦЕВ */
+            .castle-image-card,
+            .castle-image-card-full,
+            .monster-card,
+            .mana-card,
+            .research-card,
+            .calendar-card,
+            .castle-main-card {
+                padding: 20px 12px;
+            }
+            
+            .castle-image-name,
+            .monster-name,
+            .mana-name,
+            .research-name,
+            .calendar-name,
+            .castle-main-name {
+                font-size: 20px;
+                padding: 8px 0;
+            }
+            
+            .welcome h1 { 
+                font-size: 32px; 
+            }
+            .section-icon { 
+                width: 100px; 
+                height: 100px; 
+                font-size: 52px; 
+            }
+        }
+
+        /* ДЛЯ СВЕРХМАЛЕНЬКИХ ТЕЛЕФОНОВ */
+        @media (max-width: 380px) {
+            .monster-image-container h2 {
+                font-size: 22px;
+            }
+            
+            .castle-image-name,
+            .monster-name,
+            .mana-name,
+            .research-name,
+            .calendar-name,
+            .castle-main-name {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
@@ -681,7 +742,7 @@
                 <h1>🧮 Калькуляторы</h1>
             </div>
             <div id="calculatorsGrid" class="castle-main-grid"></div>
-            <div id="calculatorFrameContainer" style="display: none; width: 100%; height: 80vh; margin-top: 20px;"></div>
+            <div id="calculatorFrameContainer" style="display: none; width: 100%; height: 90vh; min-height: 600px; margin-top: 20px;"></div>
         </div>
 
     </div>
@@ -1015,7 +1076,7 @@
                 </div>
                 <iframe 
                     src="${calc.url}" 
-                    style="width: 100%; height: calc(80vh - 60px); border: none; border-radius: 16px; background: #0f141f; border: 2px solid #3f4a5e;"
+                    style="width: 100%; height: calc(90vh - 60px); min-height: 600px; border: none; border-radius: 16px; background: #0f141f; border: 2px solid #3f4a5e;"
                     title="${calc.name}"
                     loading="lazy">
                 </iframe>
@@ -1467,6 +1528,4 @@
         window.backToCalculators = backToCalculators;
     </script>
 </body>
-
 </html>
-
