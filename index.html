@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -650,7 +650,7 @@
             <div id="backButton" class="back-btn" onclick="goToMainMenu()" style="display: none;">
                 ← На главную
             </div>
-            <div class="version" id="versionBadge">v1.0</div>
+            <div class="version" id="versionBadge">v2.0</div>
         </div>
 
         <!-- ГЛАВНОЕ МЕНЮ -->
@@ -691,6 +691,116 @@
                 <div class="section-card" onclick="openSection('calculators')">
                     <div class="section-icon">🧮</div>
                     <div class="section-title">Калькуляторы</div>
+                </div>
+            </div>
+            
+                      <!-- НОВЫЙ БЛОК: Реклама гильдии DvF -->
+            <div style="
+                background: linear-gradient(145deg, #1e2a3a, #151c2b);
+                border: 2px solid #4a3a2a;
+                border-radius: 24px;
+                padding: 25px 20px;
+                margin: 30px 0 20px 0;
+                text-align: center;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+                position: relative;
+                overflow: hidden;
+            ">
+                <!-- Золотой акцент сверху -->
+                <div style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 4px;
+                    background: linear-gradient(90deg, #ffd700, #b8860b);
+                "></div>
+                
+                <!-- Иконка и заголовок -->
+                <div style="
+                    font-size: 42px;
+                    margin-bottom: 10px;
+                    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+                ">⚔️ DvF ⚔️</div>
+                
+                <div style="
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: #ffd966;
+                    margin-bottom: 15px;
+                    text-shadow: 0 0 8px rgba(255, 217, 102, 0.5);
+                ">Гильдия ищет филлеров и сборщиков!</div>
+                
+                <!-- Основное описание - ВЫРОВНЕНО ПО ЦЕНТРУ -->
+                <div style="
+                    background: rgba(10, 15, 25, 0.7);
+                    border-radius: 18px;
+                    padding: 18px;
+                    margin: 15px auto;
+                    border: 1px solid #3a4a5a;
+                    text-align: center;
+                    max-width: 500px;
+                ">
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap;">
+                        <span style="background: #2a3a4a; padding: 6px 16px; border-radius: 30px; color: #ffd966; font-weight: 600; display: inline-block;">🏆 1550+ гос</span>
+                        <span style="background: #2a3a4a; padding: 6px 16px; border-radius: 30px; color: #b0d0ff; display: inline-block;">⚡ Т4/Т5 обязательно</span>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-bottom: 12px; flex-wrap: wrap;">
+                        <div style="display: inline-block;"><span style="color: #a0b0c0;">📊 ПГ:</span> <span style="color: #ffd966; font-weight: 600;">3000</span></div>
+                        <div style="display: inline-block;"><span style="color: #a0b0c0;">⏰ Арена:</span> <span style="color: #ffd966; font-weight: 600;">21:00</span></div>
+                    </div>
+                </div>
+                
+                <!-- Контакты (уже были по центру) -->
+                <div style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 15px;
+                    flex-wrap: wrap;
+                    margin-top: 10px;
+                ">
+                    <a href="https://t.me/chapmvnpog" target="_blank" style="
+                        background: #1e3a5a;
+                        color: white;
+                        text-decoration: none;
+                        padding: 12px 25px;
+                        border-radius: 40px;
+                        font-weight: 600;
+                        border: 2px solid #ffd966;
+                        transition: 0.2s;
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 8px;
+                    " onmouseover="this.style.background='#2a4a70'" onmouseout="this.style.background='#1e3a5a'">
+                        📱 @chapmvnpog
+                    </a>
+                    
+                    <div style="
+                        background: #2a3a3a;
+                        color: #e0e0e0;
+                        padding: 12px 25px;
+                        border-radius: 40px;
+                        font-weight: 500;
+                        border: 2px solid #7a6a5a;
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 8px;
+                    ">
+                        🎮 Chapmvn (в игре)
+                    </div>
+                </div>
+                
+                <!-- Маленький текст -->
+                <div style="
+                    margin-top: 18px;
+                    font-size: 14px;
+                    color: #a0aab8;
+                    border-top: 1px dashed #3a4a5a;
+                    padding-top: 15px;
+                ">
+                    ✦ Вступай в сильную команду! ✦
                 </div>
             </div>
             
@@ -768,6 +878,15 @@
             </div>
             <div id="calculatorsGrid" class="castle-main-grid"></div>
             <div id="calculatorFrameContainer" style="display: none; width: 100%; height: 90vh; min-height: 600px; margin-top: 20px;"></div>
+        </div>
+
+        <!-- АСТРАЛИТ -->
+        <div id="astraliteScreen" class="screen">
+            <div class="section-title-hunt">
+                <h1>✨ Астралит</h1>
+            </div>
+            <div id="astraliteContent"></div>
+            <div id="astraliteImageContainer" class="monster-image-container" style="display: none;"></div>
         </div>
 
     </div>
@@ -985,6 +1104,146 @@
             }
         ];
 
+        // =========================================================
+        // АСТРАЛИТ — 6 РАЗДЕЛОВ, ПО 1 КНОПКЕ В РЯДУ
+        // =========================================================
+        const astraliteData = [
+            { 
+                id: 'hand1', 
+                name: 'Рука 1',
+                images: [
+                    // Первые 14 кнопок — по 2 в ряд (7 рядов)
+                    { id: 'skullcrusher', name: 'Разбиватель черепов', imagePath: 'https://i.yapx.ru/c8aAe.png' },
+                    { id: 'icewing_blade', name: 'Клинок Ледокрыла', imagePath: 'https://i.yapx.ru/c8aCM.png' },
+                    { id: 'bone_scepter', name: 'Костяной скипетр', imagePath: 'https://i.yapx.ru/c8aGw.png' },
+                    { id: 'ephemeral_cane', name: 'Эфемерная трость', imagePath: 'https://i.yapx.ru/c8aHe.png' },
+                    { id: 'horror_scourge', name: 'Бич ужаса', imagePath: 'https://i.yapx.ru/c8aHw.png' },
+                    { id: 'eon_axe', name: 'Топор Эона', imagePath: 'https://i.yapx.ru/c8aIj.png' },
+                    { id: 'amber_realm', name: 'Янтарная держава', imagePath: 'https://i.yapx.ru/c8aI0.png' },
+                    { id: 'devil_horn', name: 'Рог дьявола', imagePath: 'https://i.yapx.ru/c8aK7.png' },
+                    { id: 'serpent_pole', name: 'Шест Змея', imagePath: 'https://i.yapx.ru/c8aMD.png' },
+                    { id: 'kraken_anchor', name: 'Якорь Кракена', imagePath: 'https://i.yapx.ru/c8aNR.png' },
+                    { id: 'mechanical_saw', name: 'Механическая пила', imagePath: 'https://i.yapx.ru/c8aPH.png' },
+                    { id: 'thunder_pike', name: 'Громовая пика', imagePath: 'https://i.yapx.ru/c8aRB.png' },
+                    { id: 'champion_blade', name: 'Чемпионский клинок', imagePath: 'https://i.yapx.ru/c8aTQ.png' },
+                    { id: 'champion_edge', name: 'Лезвие чемпиона', imagePath: 'https://i.yapx.ru/c8aWF.png' },
+                    
+                    // Последняя кнопка — на всю ширину
+                    { id: 'champion_twohand', name: 'Двуручник чемпиона', imagePath: 'https://i.yapx.ru/c8aac.png', fullWidth: true }
+                ]
+            },
+            { 
+                id: 'helmet', 
+                name: 'Шлем', 
+                images: [
+                    // Первые 12 шлемов — по 2 в ряд (6 рядов)
+                    { id: 'hunting_helmet', name: 'Охотничий шлем', imagePath: 'https://i.yapx.ru/c8cUF.png' },
+                    { id: 'bone_crown', name: 'Корона из кости Змея', imagePath: 'https://i.yapx.ru/c8cVC.png' },
+                    { id: 'beast_helmet', name: 'Шлем Зверя', imagePath: 'https://i.yapx.ru/c8cVv.png' },
+                    { id: 'bee_queen_helmet', name: 'Шлем Королевы Пчел', imagePath: 'https://i.yapx.ru/c8cWu.png' },
+                    { id: 'ancient_hat', name: 'Древняя Шляпа', imagePath: 'https://i.yapx.ru/c8cXu.png' },
+                    { id: 'nag_helmet', name: 'Шлем Нага', imagePath: 'https://i.yapx.ru/c8cYw.png' },
+                    { id: 'shadow_helmet', name: 'Шлем Тени', imagePath: 'https://i.yapx.ru/c8cZu.png' },
+                    { id: 'ledokryl_helmet', name: 'Шлем Ледокрыла', imagePath: 'https://i.yapx.ru/c8caa.png' },
+                    { id: 'cursed_mask', name: 'Проклятая маска', imagePath: 'https://i.yapx.ru/c8ccF.png' },
+                    { id: 'devourer_helmet', name: 'Шлем пожирателя', imagePath: 'https://i.yapx.ru/c8cdH.png' },
+                    { id: 'champion_helmet', name: 'Шлем чемпиона', imagePath: 'https://i.yapx.ru/c8ceX.png' },
+                    { id: 'champion_visor', name: 'Чемпионское забрало', imagePath: 'https://i.yapx.ru/c8cfE.png' },
+                    
+                    // Последний шлем — на всю ширину
+                    { id: 'champion_armet', name: 'Армет чемпиона', imagePath: 'https://i.yapx.ru/c8cfe.png', fullWidth: true }
+                ] 
+            },
+            { 
+                id: 'armor', 
+                name: 'Броня', 
+                images: [
+                    // Первые 10 предметов брони — по 2 в ряд (5 рядов)
+                    { id: 'horror_shield', name: 'Щит ужаса', imagePath: 'https://i.yapx.ru/c8ePE.png' },
+                    { id: 'fireproof_armor', name: 'Огнеупорная броня', imagePath: 'https://i.yapx.ru/c8ePT.png' },
+                    { id: 'creepy_breastplate', name: 'Жуткий нагрудник', imagePath: 'https://i.yapx.ru/c8eP8.png' },
+                    { id: 'bee_killer_armor', name: 'Броня убийцы пчел', imagePath: 'https://i.yapx.ru/c8eQZ.png' },
+                    { id: 'ledokryl_armor', name: 'Броня Ледокрыла', imagePath: 'https://i.yapx.ru/c8eQ3.png' },
+                    { id: 'winter_jacket', name: 'Зимняя куртка', imagePath: 'https://i.yapx.ru/c8eRJ.png' },
+                    { id: 'deadly_mantle', name: 'Смертоносная Мантия', imagePath: 'https://i.yapx.ru/c8eRu.png' },
+                    { id: 'predator_pauldron', name: 'Наплечье Хищника', imagePath: 'https://i.yapx.ru/c8eS6.png' },
+                    { id: 'champion_armor', name: 'Броня чемпиона', imagePath: 'https://i.yapx.ru/c8eTo.png' },
+                    { id: 'champion_chainmail', name: 'Чемпионская кольчуга', imagePath: 'https://i.yapx.ru/c8eUd.png' },
+                    
+                    // Последний предмет брони — на всю ширину
+                    { id: 'champion_cuirass', name: 'Кираса чемпиона', imagePath: 'https://i.yapx.ru/c8eVB.png', fullWidth: true }
+                ] 
+            },
+            { 
+                id: 'legs', 
+                name: 'Поножи', 
+                images: [
+                    // Первые 12 предметов — по 2 в ряд (6 рядов)
+                    { id: 'gargantua_belt', name: 'Пояс Гаргантюа', imagePath: 'https://i.yapx.ru/c8f0f.png' },
+                    { id: 'dragon_boots', name: 'Сапоги Дракона', imagePath: 'https://i.yapx.ru/c8f3H.png' },
+                    { id: 'storm_tassets', name: 'Штормовые тассеты', imagePath: 'https://i.yapx.ru/c8f3g.png' },
+                    { id: 'griffon_shoes', name: 'Обувь Грифона', imagePath: 'https://i.yapx.ru/c8f4T.png' },
+                    { id: 'indomitable_greaves', name: 'Неукротимые поножи', imagePath: 'https://i.yapx.ru/c8f4v.png' },
+                    { id: 'rocky_sandals', name: 'Скалистые сандалии', imagePath: 'https://i.yapx.ru/c8f5C.png' },
+                    { id: 'hunting_greaves', name: 'Охотничьи поножи', imagePath: 'https://i.yapx.ru/c8f5k.png' },
+                    { id: 'mechabots', name: 'Мехаботы', imagePath: 'https://i.yapx.ru/c8f6f.png' },
+                    { id: 'secret_tread', name: 'Тайная поступь', imagePath: 'https://i.yapx.ru/c8f62.png' },
+                    { id: 'swift_boots', name: 'Сапоги быстрых ног', imagePath: 'https://i.yapx.ru/c8f7u.png' },
+                    { id: 'champion_steps', name: 'Шаги чемпиона', imagePath: 'https://i.yapx.ru/c8f8G.png' },
+                    { id: 'champion_greaves', name: 'Чемпионские поножи', imagePath: 'https://i.yapx.ru/c8f8n.png' },
+                    
+                    // Последний предмет — на всю ширину
+                    { id: 'champion_boots', name: 'Ботинки чемпиона', imagePath: 'https://i.yapx.ru/c8f9J.png', fullWidth: true }
+                ] 
+            },
+            { 
+                id: 'hand2', 
+                name: 'Рука 2', 
+                images: [
+                    // Первые 12 предметов — по 2 в ряд (6 рядов)
+                    { id: 'winter_gloves', name: 'Зимние рукавицы', imagePath: 'https://i.yapx.ru/c8vZZ.png' },
+                    { id: 'eternal_codex', name: 'Вечный Кодекс', imagePath: 'https://i.yapx.ru/c8vc9.png' },
+                    { id: 'moon_boomerang', name: 'Лунный бумеранг', imagePath: 'https://i.yapx.ru/c8vdk.png' },
+                    { id: 'angry_lamp', name: 'Злючая лампа', imagePath: 'https://i.yapx.ru/c8veI.png' },
+                    { id: 'poisoned_blade', name: 'Отравленный клинок', imagePath: 'https://i.yapx.ru/c8ve5.png' },
+                    { id: 'magic_flask', name: 'Волшебный флакон', imagePath: 'https://i.yapx.ru/c8vfT.png' },
+                    { id: 'dark_aegis', name: 'Темная Эгида', imagePath: 'https://i.yapx.ru/c8vf8.png' },
+                    { id: 'dragon_hand', name: 'Длань Дракона', imagePath: 'https://i.yapx.ru/c8vgZ.png' },
+                    { id: 'folding_knife', name: 'Складной нож', imagePath: 'https://i.yapx.ru/c8viF.png' },
+                    { id: 'call_of_deep', name: 'Зов глубин', imagePath: 'https://i.yapx.ru/c8vik.png' },
+                    { id: 'champion_lamp', name: 'Лампа чемпиона', imagePath: 'https://i.yapx.ru/c8vjd.png' },
+                    { id: 'champion_torch', name: 'Чемпионский светоч', imagePath: 'https://i.yapx.ru/c8vkN.png' },
+                    
+                    // Последний предмет — на всю ширину
+                    { id: 'champion_katar', name: 'Катар чемпиона', imagePath: 'https://i.yapx.ru/c8vk1.png', fullWidth: true }
+                ] 
+            },
+            { 
+                id: 'jewelry', 
+                name: 'Украшения', 
+                images: [
+                    // Первые 14 предметов — по 2 в ряд (7 рядов)
+                    { id: 'corruption_ring', name: 'Кольцо Порчи', imagePath: 'https://i.yapx.ru/c8yDC.png' },
+                    { id: 'divine_goblet', name: 'Божественный Кубок', imagePath: 'https://i.yapx.ru/c8yDZ.png' },
+                    { id: 'power_flasks', name: 'Флаконы мощи', imagePath: 'https://i.yapx.ru/c8yDy.png' },
+                    { id: 'brawler_resolve', name: 'Решимость буяна', imagePath: 'https://i.yapx.ru/c8yEN.png' },
+                    { id: 'book_of_dead', name: 'Книга мертвых', imagePath: 'https://i.yapx.ru/c8yE9.png' },
+                    { id: 'polar_ring', name: 'Полярное кольцо', imagePath: 'https://i.yapx.ru/c8yF1.png' },
+                    { id: 'ledokryl_breath', name: 'Дыхание Ледокрыла', imagePath: 'https://i.yapx.ru/c8yGd.png' },
+                    { id: 'serpent_seal', name: 'Печать Змея', imagePath: 'https://i.yapx.ru/c8yIB.png' },
+                    { id: 'burning_scroll', name: 'Горящий Свиток', imagePath: 'https://i.yapx.ru/c8yIz.png' },
+                    { id: 'dragon_eye', name: 'Око Дракона', imagePath: 'https://i.yapx.ru/c8yJf.png' },
+                    { id: 'horror_flask', name: 'Флакон ужаса', imagePath: 'https://i.yapx.ru/c8yKM.png' },
+                    { id: 'fear_drum', name: 'Барабан страха', imagePath: 'https://i.yapx.ru/c8yK4.png' },
+                    { id: 'champion_faith', name: 'Вера чемпиона', imagePath: 'https://i.yapx.ru/c8yLd.png' },
+                    { id: 'champion_valor', name: 'Чемпионская доблесть', imagePath: 'https://i.yapx.ru/c8yMM.png' },
+                    
+                    // Последний предмет — на всю ширину
+                    { id: 'champion_grace', name: 'Благодать чемпиона', imagePath: 'https://i.yapx.ru/c8yMe.png', fullWidth: true }
+                ] 
+            }
+        ];
+
         let currentItemId = null;
         let currentSection = null;
         let currentMainCategory = null;
@@ -1000,6 +1259,7 @@
             document.getElementById('manaScreen').classList.remove('active');
             document.getElementById('castleStylesScreen').classList.remove('active');
             document.getElementById('calculatorsScreen').classList.remove('active');
+            document.getElementById('astraliteScreen').classList.remove('active');
             
             if (sectionId === 'magic-hunt') {
                 document.getElementById('magicHuntScreen').classList.add('active');
@@ -1050,6 +1310,13 @@
                 currentSection = 'calculators';
                 renderCalculatorsGrid();
             }
+            else if (sectionId === 'astralite') {
+                document.getElementById('astraliteScreen').classList.add('active');
+                document.getElementById('backButton').style.display = 'block';
+                document.getElementById('versionBadge').style.display = 'none';
+                currentSection = 'astralite';
+                renderAstraliteMain();
+            }
             else {
                 document.getElementById('mainMenuScreen').classList.add('active');
                 document.getElementById('backButton').style.display = 'none';
@@ -1067,6 +1334,7 @@
             document.getElementById('manaScreen').classList.remove('active');
             document.getElementById('castleStylesScreen').classList.remove('active');
             document.getElementById('calculatorsScreen').classList.remove('active');
+            document.getElementById('astraliteScreen').classList.remove('active');
             document.getElementById('backButton').style.display = 'none';
             document.getElementById('versionBadge').style.display = 'block';
         }
@@ -1423,6 +1691,105 @@
             });
         }
 
+        function renderAstraliteMain() {
+            const content = document.getElementById('astraliteContent');
+            content.innerHTML = '';
+            
+            const grid = document.createElement('div');
+            grid.className = 'castle-main-grid';
+            
+            astraliteData.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'castle-main-card';
+                card.dataset.itemId = item.id;
+                card.onclick = () => showAstraliteImages(item.id);
+                card.innerHTML = `<div class="castle-main-name">${item.name}</div>`;
+                grid.appendChild(card);
+            });
+            
+            content.appendChild(grid);
+        }
+
+        function showAstraliteImages(itemId) {
+            const item = astraliteData.find(i => i.id === itemId);
+            if (!item) return;
+            
+            currentItemId = item.id;
+            currentSection = 'astralite';
+            
+            const content = document.getElementById('astraliteContent');
+            content.innerHTML = '';
+            
+            // Заголовок с кнопкой назад
+            const header = document.createElement('h2');
+            header.style.cursor = 'pointer';
+            header.style.color = '#ffd966';
+            header.style.marginBottom = '30px';
+            header.style.fontSize = '28px';
+            header.innerHTML = `← Назад`;
+            header.onclick = () => renderAstraliteMain();
+            content.appendChild(header);
+            
+            if (item.images && item.images.length > 0) {
+                let grid = document.createElement('div');
+                grid.className = 'castle-images-grid';
+                
+                item.images.forEach(img => {
+                    if (img.fullWidth) {
+                        if (grid.children.length > 0) {
+                            content.appendChild(grid);
+                        }
+                        
+                        const fullCard = document.createElement('div');
+                        fullCard.className = 'castle-image-card-full';
+                        fullCard.onclick = () => showAstraliteSingleImage(img.imagePath, img.name);
+                        fullCard.innerHTML = `<div class="castle-image-name">${img.name}</div>`;
+                        content.appendChild(fullCard);
+                        
+                        grid = document.createElement('div');
+                        grid.className = 'castle-images-grid';
+                    } else {
+                        const card = document.createElement('div');
+                        card.className = 'castle-image-card';
+                        card.onclick = () => showAstraliteSingleImage(img.imagePath, img.name);
+                        card.innerHTML = `<div class="castle-image-name">${img.name}</div>`;
+                        grid.appendChild(card);
+                    }
+                });
+                
+                if (grid.children.length > 0) {
+                    content.appendChild(grid);
+                }
+                
+                const imageContainer = document.createElement('div');
+                imageContainer.id = 'astraliteSingleImageContainer';
+                imageContainer.className = 'monster-image-container';
+                imageContainer.style.display = 'none';
+                imageContainer.style.marginTop = '30px';
+                content.appendChild(imageContainer);
+            } else {
+                const emptyDiv = document.createElement('div');
+                emptyDiv.style.color = '#a2aec4';
+                emptyDiv.style.textAlign = 'center';
+                emptyDiv.style.padding = '40px';
+                emptyDiv.textContent = 'Нет изображений';
+                content.appendChild(emptyDiv);
+            }
+        }
+
+        function showAstraliteSingleImage(imagePath, name) {
+            const container = document.getElementById('astraliteSingleImageContainer');
+            container.style.display = 'block';
+            container.innerHTML = `
+                <h2>${name}</h2>
+                <img src="${imagePath}" 
+                     alt="${name}" 
+                     class="monster-image"
+                     onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22450%22><rect width=%22800%22 height=%22450%22 fill=%22%231e2535%22/><text x=%2250%22 y=%22225%22 fill=%22%23b0bedb%22 font-size=%2224%22>Ошибка загрузки</text></svg>';">
+            `;
+            container.scrollIntoView({ behavior: 'smooth' });
+        }
+
         function createManaCard(item) {
             const card = document.createElement('div');
             card.className = `mana-card ${currentItemId === item.id && currentSection === 'mana' ? 'active' : ''}`;
@@ -1574,7 +1941,9 @@
         window.showCalculator = showCalculator;
         window.backToCalculators = backToCalculators;
         window.renderCalendarGrid = renderCalendarGrid;
+        window.renderAstraliteMain = renderAstraliteMain;
+        window.showAstraliteImages = showAstraliteImages;
+        window.showAstraliteSingleImage = showAstraliteSingleImage;
     </script>
 </body>
 </html>
-
